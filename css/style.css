@@ -10,6 +10,7 @@
   width: 50px;
 }
 
+
 /* CARD 1 */ 
 
 .card1 {
@@ -29,7 +30,6 @@
 }
 
 /* BOTONES SOLO PARA .container1 */
-
 .container1 {
   display: flex;
   flex-wrap: wrap;
@@ -57,6 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none; /* Añadido para quitar el subrayado del enlace */
 }
 
 /* Estilos al hacer hover */
@@ -85,6 +86,7 @@
     max-width: 300px; /* Opcional para que no sean demasiado anchos */
   }
 }
+
 
 /* CARDS */ 
 
