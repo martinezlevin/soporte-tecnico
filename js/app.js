@@ -3,3 +3,5 @@ setTimeout(() => {
     document.getElementById('loader').classList.add('loader2');
   }, 1000); // 1000 milisegundos = 2 segundos
   
+
+  
