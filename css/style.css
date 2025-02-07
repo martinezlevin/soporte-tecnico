@@ -1029,7 +1029,7 @@
 
 
 .service-section {
-  margin-top  : 2rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 1rem;
   background-color: #3c3f42;
@@ -1037,12 +1037,13 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.36);
 }
 
+/*
 .service-image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
-}
+}*/
 
 h2, h3 {
   color: #ffffff;
