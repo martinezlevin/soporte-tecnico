@@ -867,6 +867,9 @@
 
 .grid-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
   padding: 16px;
   max-width: 1500px;
@@ -878,8 +881,8 @@
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 230px;
   box-shadow: 6px 6px 12px #c5c5c5,
 }
 
