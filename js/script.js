@@ -14,3 +14,6 @@ cards.forEach(card => {
         }
     });
 });
+
+// USO DE SCROLLREVEAL
+ScrollReveal().reveal('.headline');

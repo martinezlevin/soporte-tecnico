@@ -3,5 +3,3 @@ setTimeout(() => {
     document.getElementById('loader').classList.add('loader2');
   }, 2000); 
   
-// USO DE SCROLLREVEAL
-  ScrollReveal().reveal('.headline');

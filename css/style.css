@@ -162,6 +162,7 @@
  .text-title {
   font-size: 1.5em;
   font-weight: bold;
+  color: #000;
  }
  
  /*Hover*/
@@ -1036,13 +1037,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.36);
 }
 
-/*
-.service-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}*/
 
 h2, h3 {
   color: #ffffff;
@@ -1057,9 +1051,6 @@ ul {
   list-style-type: disc;
   margin-left: 2rem;
 }
-
-
-
 
 
 
@@ -1104,5 +1095,5 @@ ul {
 }
 
 .fw-lighter {
-  color: #a8a6a6;
+  color: #000000;
 }
