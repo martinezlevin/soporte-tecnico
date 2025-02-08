@@ -7,11 +7,9 @@
   box-sizing: border-box;
 }
 
-
 .nav-logo {
   width: 50px;
 }
-
 
 /* CARD 1 */ 
 
@@ -1105,69 +1103,6 @@ ul {
   width: 100%;
 }
 
-/* FOOTER EFFECT */
-
-.btn-shine {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 12px 48px;
-  color: #fff; /* Fallback para navegadores que no soportan background-clip: text */
-  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
-  background-position: 0;
-  -webkit-background-clip: text;
-  background-clip: text; /* Propiedad estándar */
-  -webkit-text-fill-color: transparent;
-  animation: shine 3s infinite linear;
-  animation-fill-mode: forwards;
-  -webkit-text-size-adjust: none;
-  font-weight: 600;
-  font-size: 16px;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Poppins", sans-serif;
-}
-@-moz-keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 280px;
-  }
-  100% {
-    background-position: 500px;
-  }
-}
-@-webkit-keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 280px;
-  }
-  100% {
-    background-position: 500px;
-  }
-}
-@-o-keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 280px;
-  }
-  100% {
-    background-position: 500px;
-  }
-}
-@keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 280px;
-  }
-  100% {
-    background-position: 500px;
-  }
+.fw-lighter {
+  color: #a8a6a6;
 }
