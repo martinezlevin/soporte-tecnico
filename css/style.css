@@ -1037,13 +1037,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.36);
 }
 
-
-h2, h3 {
-  color: #ffffff;
-}
-
 p, li {
-  color: #ffffff;
   line-height: 1.6;
 }
 
@@ -1051,8 +1045,6 @@ ul {
   list-style-type: disc;
   margin-left: 2rem;
 }
-
-
 
 
 .boton {
