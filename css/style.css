@@ -1093,3 +1093,186 @@ ul {
 .Copyright {
   color: #fff;
 }
+
+
+
+/* VIDEO */
+
+/* Estilos para el contenedor del video */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* Estilos para el iframe del video */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* PAGINA INFO UTIL SECTION*/
+
+
+.titulo-info-util {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.card8 {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 500px;
+  width: 300px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.341);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.card8:hover {
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.999);
+ }
+ 
+ 
+.card6 img {
+  width: 100vh;
+  height: 100vh;
+}
+
+.card8-header {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 10;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.381);
+  backdrop-filter: blur(2px);
+  padding: 16px;
+  font-size: 13px;
+}
+
+.card8-header .text-tiny {
+  font-size: 11px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card8-header h4 {
+  font-size: 16px;
+  margin: 8px 0 0;
+}
+
+.card8.footer-blurred .card6-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card8-footer .text-tiny {
+  font-size: 10px;
+  color: black;
+}
+
+.card8-footer .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.card8-footer .btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Estilos para el contenedor de tips */
+.tips {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Ajusta la altura según necesites */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Contenedor de tips */
+.tips {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Ajusta la altura según necesites */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la imagen de fondo */
+.tips .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  z-index: 1; /* Coloca la imagen detrás del contenido */
+}
+
+/* Div con efecto blur */
+.tips .blur-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(57, 57, 57, 0.38); /* Fondo semi-transparente */
+  backdrop-filter: blur(10px); /* Efecto blur */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2; /* Asegura que esté por encima de la imagen */
+}
+
+/* Estilo del subtítulo */
+.tips .blur-box h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
