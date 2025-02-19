@@ -864,17 +864,6 @@
   text-align: center;
 }
 
-
-.grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  padding: 16px;
-  margin: 0 auto;
-}
-
 .card6 {
   position: relative;
   background-color: #fff;
@@ -971,6 +960,17 @@
   border-radius: 50%;
   background-color: black;
 }
+
+.imagen-card-info {
+  max-width: 190px;
+  max-height: 350px;
+}
+
+
+
+
+
+
 
 
 
