@@ -753,27 +753,25 @@
   transform: scale(1.5);
   border-radius: 15px;
 }
-/* facebook*/
+/* mail */
 .containerTwo:hover {
-  background-color: #0866FF;
-  transition-duration: 0.3s;
-  transform: scale(1.5);
-  border-radius: 15px;
-}
-/* logo-white*/
-.containerThree:hover {
-  background-color: #e6af21;
+  background-color: #E14D48;
   transition-duration: 0.3s;
   transform: scale(1.5);
   border-radius: 15px;
 }
 
-.logo-white {
-  width: 30px;
-}
 /* Whatsapp*/
 .containerFour:hover {
   background-color: #0EC043;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+
+/* portafolio */
+.containerThree:hover {
+  background: linear-gradient(130deg, #ffd700, #daa520, #b8860b, #8b7500, #ffdf00);
   transition-duration: 0.3s;
   transform: scale(1.5);
   border-radius: 15px;
@@ -785,7 +783,7 @@
 }
 
 .socialSvg {
-  width: 17px;
+  width: 25px;
 }
 
 .socialSvg path {
@@ -807,6 +805,7 @@
     opacity: 1;
   }
 }
+
 
 /* LOADER */
 
