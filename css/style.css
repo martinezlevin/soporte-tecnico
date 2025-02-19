@@ -968,12 +968,6 @@
 
 
 
-
-
-
-
-
-
 .card7 {
   position: relative;
   border-radius: 16px;
@@ -1275,4 +1269,133 @@ ul {
   margin: 0;
   font-size: 24px;
   color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+/* BOTON DE ACCION */
+.btn-conteiner {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin: 10px;
+  --color-text: #ffffff;
+  --color-background: #3BC24D;
+  --color-outline: #3BC24D;
+  --color-shadow: #ffffff80;
+
+  /* Hacer el botón fijo */
+  position: fixed;
+  bottom: 10px; /* Distancia desde la parte inferior */
+  right: 10px;  /* Distancia desde la derecha */
+  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
+
+  /* Animación siempre activa */
+  animation: btn-content 1s infinite;
+}
+
+.btn-content .icon-arrow {
+  transition: 0.5s;
+  margin-right: 0px;
+  transform: scale(0.6);
+
+  /* Animación siempre activa */
+  animation: arrow-move 1s infinite;
+}
+
+.icon-arrow {
+  width: 20px;
+  margin-left: 15px;
+  position: relative;
+  top: 6%;
+}
+    
+/* SVG */
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.btn-content #arrow-icon-three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content #arrow-icon-one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content #arrow-icon-two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: var(--color-background);
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+/* Button animations */
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+  50% {
+    outline: 0.2em solid transparent;
+    outline-offset: 0.2em;
+  }
+  100% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+/* Animación para mover la flecha */
+@keyframes arrow-move {
+  0% {
+    margin-right: 0px;
+  }
+  50% {
+    margin-right: 25px;
+  }
+  100% {
+    margin-right: 0px;
+  }
 }
