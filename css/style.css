@@ -726,7 +726,7 @@
 .card1 {
   width: fit-content;
   height: fit-content;
-  background-color: rgb(238, 238, 238);
+  background-color: #cacacaaa;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -739,7 +739,7 @@
 .socialContainer {
   width: 52px;
   height: 52px;
-  background-color: rgb(44, 44, 44);
+  background-color: #060517;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1025,10 +1025,14 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 1rem;
-  background-color: #3c3f42;
+  background-color: #000000a1; /* semitransparente */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.36);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* para Safari */
 }
+
 
 p, li {
   line-height: 1.6;
@@ -1397,4 +1401,167 @@ ul {
   100% {
     margin-right: 0px;
   }
+}
+
+.light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Para que no interfiera con clics */
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(60, 53, 233, 0.8) 0%,
+    rgba(60, 53, 233, 0) 100%
+  );
+  mix-blend-mode: screen;
+  transition: background-position 0.05s ease;
+  z-index: -9999;
+}
+
+
+
+
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 2rem;
+
+}
+
+/* Áreas */
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+.div4 { grid-area: 3 / 1 / 4 / 3; }
+
+/* Tarjetas estilo Bento con tu fondo blur */
+.bento-box {
+  background-color: #12101d00; /* color semitransparente */
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bento-box:hover {
+  transform: scale(1.015);
+}
+
+/* Título principal */
+.box-header h3 {
+  font-size: 2rem;
+  color: #3C35E9;
+  text-align: center;
+  margin: 0;
+}
+
+/* Subtítulos */
+.box-preventivo h2,
+.box-correctivo h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
+/* Texto final */
+.box-final {
+  text-align: center;
+  color: #ccc;
+}
+
+
+.bento-box.box-header {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Footer decorativo */
+.bento-box.box-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px; /* ajustá el alto como gustes */
+  width: 100%;
+  background-color: #3C35E9; /* color del h3 */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  z-index: 0;
+}
+
+.bento-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.box-preventivo,
+.box-correctivo {
+  position: relative;
+  overflow: hidden; /* Esto es clave para que el glow no se escape */
+}
+
+/* Efecto azul borroso arriba */
+.box-preventivo::before,
+.box-correctivo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(59, 53, 233, 0.786) 0%,
+    rgba(60, 53, 233, 0.15) 70%,
+    rgba(60, 53, 233, 0) 100%
+  );
+  filter: blur(3px);
+  z-index: 0;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* Efecto blanco borroso abajo */
+.box-preventivo::after,
+.box-correctivo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.786) 0%,
+    rgba(255, 255, 255, 0.15) 70%,
+    rgba(254, 254, 254, 0) 100%
+  );
+  filter: blur(3px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bento-box.box-final::after {
+  content: "";
+  position: absolute;
+  top: 0;               
+  left: 0;
+  height: 30px;        
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+  white               
+  );
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  z-index: 0;
 }
