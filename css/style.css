@@ -1565,3 +1565,22 @@ ul {
   border-top-right-radius: 12px;
   z-index: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .parent {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    padding: 1rem;
+  }
+
+  .div1 { grid-area: unset; }
+  .div2 { grid-area: unset; }
+  .div3 { grid-area: unset; }
+  .div4 { grid-area: unset; }
+
+  .bento-box {
+    width: 100%;
+  }
+}
