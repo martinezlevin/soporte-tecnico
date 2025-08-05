@@ -1022,16 +1022,19 @@
 
 
 .service-section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem auto; /* centrado y espacio arriba/abajo */
   padding: 1rem;
-  background-color: #000000a1; /* semitransparente */
+  background-color: #000000a1;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.36);
 
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px); /* para Safari */
+  -webkit-backdrop-filter: blur(5px);
+
+  max-width: 800px; /* o cualquier valor menor, ej: 600px */
+  width: 100%; /* asegura que se adapte al contenedor */
 }
+
 
 
 p, li {
@@ -1583,4 +1586,98 @@ ul {
   .bento-box {
     width: 100%;
   }
+}
+
+
+
+
+
+
+
+
+
+
+/* Contenedor principal */
+.service-section1 {
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #000000a1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.36);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Grid base */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto auto auto;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Áreas del grid */
+.grid-header  { grid-column: 1 / -1; }
+.grid-intro   { grid-column: 1 / -1; }
+.grid-left    { grid-column: 1 / 4; }
+.grid-right   { grid-column: 4 / 7; }
+.grid-footer  { grid-column: 1 / -1; }
+
+/* Caja base */
+.grid-box {
+  background-color: #000000a1;
+  border-radius: 8px;
+  padding: 1.5rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.36);
+  color: #fff;
+}
+
+/* Tipografía */
+h2, h3 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 1.25rem;
+  margin: 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .grid-intro,
+  .grid-left,
+  .grid-right,
+  .grid-footer {
+    grid-column: auto;
+  }
+
+  .grid-left,
+  .grid-right {
+    grid-column: auto;
+  }
+}
+
+.hardware-box {
+  margin-bottom: 1.5rem;
+  background-color: #000000a1;
+  border-radius: 8px;
+  padding: 1.5rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
